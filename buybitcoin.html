@@ -1,21 +1,22 @@
-<html>
-<head>
+
+<!-- saved from url=(0051)https://bitcoin-se.loopiasecure.com/buybitcoin.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>BTCX Project</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <base target="_parent" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
-	<script src="https://crypto-js.googlecode.com/files/2.5.3-crypto-sha256.js"></script>
-	<script src="./jsbn.js"></script>
-	<script src="./jsbn2.js"></script>
+    
+    <!--<base target="_parent">--><base href="." target="_parent">
+	<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PLZGKN"></script><script src="./BTCX Project_files/jquery.min.js"></script>
+	<link rel="stylesheet" href="./BTCX Project_files/font-awesome.min.css">
+	<link href="./BTCX Project_files/css" rel="stylesheet" type="text/css">
+	<script src="./BTCX Project_files/2.5.3-crypto-sha256.js"></script>
+	<script src="./BTCX Project_files/jsbn.js"></script>
+	<script src="./BTCX Project_files/jsbn2.js"></script>
 		
 	<!-- Bootstrap -->	
-	<link rel="stylesheet" href="bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="bootstrap/3.3.5/css/bootstrap-theme.min.css">
-	<script src="bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./BTCX Project_files/bootstrap.min.css">
+	<link rel="stylesheet" href="./BTCX Project_files/bootstrap-theme.min.css">
+	<script src="./BTCX Project_files/bootstrap.min.js"></script>
 
-	<STYLE TYPE="text/css">
+	<style type="text/css">
 	label {
 	  margin-top: 10px;
 	  margin-bottom: 10px;
@@ -77,27 +78,20 @@
 		margin-top: 10px;
 	}
 
-	</STYLE>
+	</style>
 
 </head>
 
-<body onload="parent.postMessage(document.body.scrollHeight, 'http://www.bitcoin.se');">
+<body>
 <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PLZGKN"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PLZGKN');</script>
 <!-- End Google Tag Manager -->
 
 <div class="container-fluid">
-<form class="btcx-form" target="_blank" id="purchaseBitcoins" method="GET" action="https://btcx.se/">
-	<INPUT type="hidden" name="mode" value="buy">
-	<INPUT type="hidden" name="currency" value="btc">
-	<INPUT type="hidden" name="action" value="send">
-	<INPUT type="hidden" name="apiKey" value="ee3b41f4-0d16-4e99-9c03-831966d5a439">
+<form class="btcx-form" method="GET" id="purchaseBitcoins" method="GET" action="https://btcx.se/">
+	<input type="hidden" name="mode" value="buy">
+	<input type="hidden" name="currency" value="btc">
+	<input type="hidden" name="action" value="send">
+	<input type="hidden" name="apiKey" value="ee3b41f4-0d16-4e99-9c03-831966d5a439">
 	
 	<div id="bigOrange" class="row">
 		<div class="col-md-12 col-xs-12 col-sm-12">
@@ -105,25 +99,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 		<div class="col-md-6 col-xs-12 col-sm-6">
 			<label>Jag vill köpa för (SEK):</label>
-			<input type="text" id="amountSek" class="form-control left" placeholder="0" name="amount" required>
+			<input type="text" id="amountSek" class="form-control left" placeholder="0" name="amount" required="" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
 			<div id="btcxSek" class="currency"></div>
 		</div>
 		<div class="col-md-6 col-xs-12 col-sm-6">
 			<label>Ungefärligt belopp (BTC):</label>
-			<input type="text" id="amountBtc" class="form-control left" placeholder="0" name="buyAmount" readonly>
+			<input type="text" id="amountBtc" class="form-control left" placeholder="0" name="buyAmount" readonly="">
 			<div class="currency"></div>			
 		</div>		
 		<div class="col-md-12 col-xs-12 col-sm-12">
 			<label>Bitcoinadress (<a href="https://btcx.se/faq#faq2" target="new">hjälp</a>):</label>
-			<input type="text" placeholder="Din bitcoinadress" id="btcAdr" class="form-control right" name="buyBitAddress" required>		
+			<input type="text" placeholder="Din bitcoinadress" id="btcAdr" class="form-control right" name="buyBitAddress" required="">		
 		</div>		
 		<div class="col-md-6 col-xs-12 col-sm-6">
 			<label>Mobilnummer:</label>
-			<input type="text" placeholder="Samma nummer som ditt Swish" id="phoneNumber" class="form-control right" name="pinOrPhonenumber" required>				
+			<input type="text" placeholder="Samma nummer som ditt Swish" id="phoneNumber" class="form-control right " name="pinOrPhonenumber" required="">				
 		</div>
 		<div class="col-md-6 col-xs-12 col-sm-6">
 			<label>Din email:</label>
-			<input type="text" id="email" placeholder="email@example.com" class="form-control right" name="email" required>			
+			<input type="text" id="email" placeholder="email@example.com" class="form-control right " name="email" required="">			
 		</div>
 
 		<div class="col-md-12 col-xs-12 col-sm-12">
@@ -135,8 +129,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		
 		<div class="col-md-12 col-xs-12 col-sm-12">
 			<label>Personnummer:</label>
-			<input type="text" id="sweSsn" placeholder="Måste vara samma som ditt BankID" class="form-control right" name="buyPersonNummer" required>
-			<div id="tooltip">Format: ååååmmdd-xxxx</div>
+			<input type="text" id="sweSsn" placeholder="Måste vara samma som ditt BankID" class="form-control right" name="buyPersonNummer" required="">
+			<div id="tooltip" style="display: none;">Format: ååååmmdd-xxxx</div>
 		</div>
 
 		<div class="col-md-6 col-xs-12 col-sm-6">
@@ -155,7 +149,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 		<div class="col-md-6 col-xs-12 col-sm-6">
 			<label>Postnummer</label>
-			<input type="text" id="" placeholder="Ditt postnummer" class="form-control right" name="buyPostCode" required="">
+			<input type="text" id="buyPostCode" placeholder="Ditt postnummer" class="form-control right" name="buyPostCode" required="">
 		</div>
 		<div class="col-md-6 col-xs-12 col-sm-6">
 			<label>Postort</label>
@@ -164,12 +158,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 		<div class="col-md-12 col-xs-12 col-sm-12">		
 			Är du en <a href="https://btcx.se/pep" target="_blank">politiskt utsatt person?</a>   
-			  <input class="radio-input" type="radio" name="pepAnswer" id="pepAnswer1" value="False" required />Nej
-			  <input class="radio-input" type="radio" name="pepAnswer" id="pepAnswer2" value="True" required />Ja
+			  <input class="radio-input" type="radio" name="pepAnswer" id="pepAnswer1" value="False" required="">Nej
+			  <input class="radio-input" type="radio" name="pepAnswer" id="pepAnswer2" value="True" required="">Ja
 		</div>
 		<div class="col-md-12 col-xs-12 col-sm-12">		
 			 <div class="accept-policy">
-				<input type="checkbox" required="" id="buyAgreeTerms"  name="buyAgreeTerms" >
+				<input type="checkbox" required="" id="buyAgreeTerms" name="buyAgreeTerms">
 				Jag godtar BTCXs <a target="_blank" href="https://btcx.se/villkor">köpvillkor och privacy policy.</a>
 			</div>
 		</div>
@@ -186,7 +180,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </form>
 </div>
 
-<SCRIPT TYPE="text/javascript">   
+<script type="text/javascript">   
 	BigInteger.valueOf = nbv;
 	BigInteger.prototype.toByteArrayUnsigned = function () {
 		var ba = this.toByteArray();
@@ -252,9 +246,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			return false;
 		}
 	}
-</SCRIPT>
+</script>
 
-<SCRIPT TYPE="text/javascript">
+<script type="text/javascript">
 $(document).ready(function(){
         /*
             Hostname Config
@@ -264,11 +258,11 @@ $(document).ready(function(){
         var btcxHostName = "https://btcx.se/";
         //
 
-        var btcxBtcRate;
+        var btcxBtcRate = 0.000300210147;
 
-        $.getJSON(btcxHostName + "getRates/").done(function(data) {
-            btcxBtcRate = data["buyRates"]["BTC"]["Bitcoin"];
-        });
+        // $.getJSON(btcxHostName + "getRates/").done(function(data) {
+        //     btcxBtcRate = data["buyRates"]["BTC"]["Bitcoin"];
+        // });
 
 
 //      $("#bigOrange").hide();
@@ -290,7 +284,7 @@ $(document).ready(function(){
 
         $("#amountSek").on("input ",function(){
             if ($.isNumeric($(this).val())){
-                $("#amountBtc").val($(this).val() * btcxBtcRate);
+                $("#amountBtc").val(Math.round($(this).val() * btcxBtcRate * 100000)/100000); 
                 if ($(this).val() > 2000){
                     $(this).addClass("error").removeClass("correct");
                     // $("#btcxSek").append('<div id="tooMuch">För att genomföra köp över 2000 SEK per dag så måste du registrera dig på <a href="https://bt.cx">bt.cx</a>. Då får du också ett bättre pris. Bra va?</div>');
@@ -307,7 +301,6 @@ $(document).ready(function(){
         });
 
     var validatePersonalNumber = function(input) {
-        console.log(input);
         // Check valid length & form
         if (!input) return false;
 
@@ -345,6 +338,8 @@ $(document).ready(function(){
             sum += digit;
         }
         return (sum % 10) == 0;
+
+
     };
 
     function validateEmail(email) {
@@ -370,6 +365,25 @@ $(document).ready(function(){
         } else {
             $(this).addClass("correct");
         }
+        // Find current year
+        var year = new Date().getFullYear();
+        // If number lacks century
+        if(ssn.length === 10){
+            // If year has passed in this century
+            if((ssn.slice(0, 2) / 1) < (year % 100 )){
+                // Add current century digits
+                ssn = Math.floor(year/100) + ssn;
+            }
+            else{
+                // Add last century's digits
+                ssn = Math.floor(year/100 - 1) + ssn;
+            }
+        }
+
+        var reg = /^\d+$/;
+		if (ssn.length == 12 && reg.test(ssn)){
+			$(this).val(ssn.slice(0, 8)+'-'+ssn.slice(-4));
+		}
     });
 
     $("#email").on("input keyup", function(e){
@@ -407,20 +421,51 @@ $(document).ready(function(){
         
     });
 
+     $("#phoneNumber").on("change", function(){
+		$(this).bind('blur', function() {
+		    var currentValue = $(this).val().split(' ').join('').split('-').join('');
+		    if(currentValue.substr(0,2) === '00'){
+		        currentValue = '+' + currentValue.slice(2);
+		    }
+		    if(currentValue.substr(0,3) === '+46'){
+		        currentValue = '0' + currentValue.slice(3);
+		    }
+		    var PHONE_NUMBER_REGEXP = /^07\d{8,10}$/;
+		    if(currentValue !== ''){
+		        // Test if number is in currect form
+		        if(PHONE_NUMBER_REGEXP.test(currentValue)){
+		            $(this).val(currentValue.slice(0, 3)+'-'+currentValue.slice(3));
+		            $(this).removeClass('error');
+		            //$('#buyPhoneNumber-error').html('');
+		        } else { 
+		            $(this).addClass('error');
+	                // $('#buyPhoneNumber-error').html(attrs.invaliderror);
+	                // $('#buyPhoneNumber-error').show();
+		        }
+		    }
+		});
+    });
+
+	$("#buyPostCode").on("input keyup", function(){
+		var postCode = $(this).val();
+		var reg = /^\d+$/;
+		if (postCode.length == 5 && reg.test(postCode)){
+			$(this).val(postCode.slice(0,3)+' '+postCode.slice(-2));
+		}
+	});
+
+
     /*
         Validate form before submission.
     */
     $("#purchaseBitcoins").submit(function(event){
-        
+    	
+    	console.log("submit!");
         var phone = $("#phoneNumber").val();
         var btc = $("#btcAdr").val();
         var email = $("#email").val();
         var ssn = $("#sweSsn").val();
         var amountSek = $("#amountSek").val();  
-        // console.log(checkPhoneNumber(phone));
-        // console.log(checkBtc(btc));
-        // console.log(validateEmail(email);
-        // console.log(validatePersonalNumber(ssn));
 
         if (checkPhoneNumber(phone) && checkBtc(btc) && validateEmail(email) && validatePersonalNumber(ssn) && amountSek < 2001 ){
             dataLayer.push({'Buy bitcoin amount': amountSek});
@@ -437,8 +482,8 @@ $(document).ready(function(){
 
 }); //end of document ready
 
-</SCRIPT>
+</script>
 
 
-</body>
-</html>
+
+<script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body></html>
