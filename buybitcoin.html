@@ -258,11 +258,11 @@ $(document).ready(function(){
         var btcxHostName = "https://btcx.se/";
         //
 
-        var btcxBtcRate = 0.000300210147;
+        var btcxBtcRate;
 
-        // $.getJSON(btcxHostName + "getRates/").done(function(data) {
-        //     btcxBtcRate = data["buyRates"]["BTC"]["Bitcoin"];
-        // });
+        $.getJSON(btcxHostName + "getRates/").done(function(data) {
+            btcxBtcRate = data["buyRates"]["BTC"]["Bitcoin"];
+        });
 
 
 //      $("#bigOrange").hide();
@@ -460,7 +460,7 @@ $(document).ready(function(){
     */
     $("#purchaseBitcoins").submit(function(event){
     	
-    	console.log("submit!");
+    	// console.log("submit!");
         var phone = $("#phoneNumber").val();
         var btc = $("#btcAdr").val();
         var email = $("#email").val();
