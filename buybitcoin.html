@@ -1,20 +1,19 @@
-
-<!-- saved from url=(0051)https://bitcoin-se.loopiasecure.com/buybitcoin.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
     <title>BTCX Project</title>
-    
-    <!--<base target="_parent">--><base href="." target="_parent">
-	<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PLZGKN"></script><script src="./BTCX Project_files/jquery.min.js"></script>
-	<link rel="stylesheet" href="./BTCX Project_files/font-awesome.min.css">
-	<link href="./BTCX Project_files/css" rel="stylesheet" type="text/css">
-	<script src="./BTCX Project_files/2.5.3-crypto-sha256.js"></script>
-	<script src="./BTCX Project_files/jsbn.js"></script>
-	<script src="./BTCX Project_files/jsbn2.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <base target="_parent" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+	<script src="https://crypto-js.googlecode.com/files/2.5.3-crypto-sha256.js"></script>
+	<script src="./jsbn.js"></script>
+	<script src="./jsbn2.js"></script>
 		
 	<!-- Bootstrap -->	
-	<link rel="stylesheet" href="./BTCX Project_files/bootstrap.min.css">
-	<link rel="stylesheet" href="./BTCX Project_files/bootstrap-theme.min.css">
-	<script src="./BTCX Project_files/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 	<style type="text/css">
 	label {
@@ -94,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 <div class="container-fluid">
-<form class="btcx-form" method="GET" id="purchaseBitcoins" method="GET" action="https://btcx.se/">
+<form class="btcx-form" target="_blank" id="purchaseBitcoins" method="GET" action="https://btcx.se/">
 	<input type="hidden" name="mode" value="buy">
 	<input type="hidden" name="currency" value="btc">
 	<input type="hidden" name="action" value="send">
@@ -493,4 +492,7 @@ $(document).ready(function(){
 
 
 
-<script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body></html>
+<script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script>
+
+</body>
+</html>
