@@ -374,7 +374,7 @@ $(document).ready(function(){
         // Find current year
         var year = new Date().getFullYear();
         // If number lacks century
-        if(ssn.length === 10){
+        if(ssn.length === 10 && ssn.slice(0, 2) !== "19"){
             // If year has passed in this century
             if((ssn.slice(0, 2) / 1) < (year % 100 )){
                 // Add current century digits
